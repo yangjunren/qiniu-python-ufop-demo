@@ -76,7 +76,7 @@ class S(BaseHTTPRequestHandler):
             self.wfile.write("request error！".encode("utf-8"))
 
 
-def run(server_class=HTTPServer, handler_class=S, port=9200):
+def run(server_class=HTTPServer, handler_class=S, port=9100):
     logging.basicConfig(level=logging.INFO)
     server_address = ('0.0.0.0', port)
     httpd = server_class(server_address, handler_class)
