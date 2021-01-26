@@ -12,7 +12,7 @@ docker build -t "yjr_ufoptest:v1" .
 ## 运行镜像
 
 ```
-docker run -p 9100:9100 yjr_ufoptest:v1
+docker run -p 9100:9100 yjr-ufoptest:v1
 ```
 
 ## 测试数据处理接口
@@ -21,7 +21,7 @@ docker run -p 9100:9100 yjr_ufoptest:v1
 运行命令
 
 ```
-curl -X POST "http://127.0.0.1:9100/handler?cmd=yjr_ufoptest&url=http://qiniu.com/4/a1.jpg"
+curl -X POST "http://127.0.0.1:9100/handler?cmd=yjr-ufoptest&url=http://qiniu.com/4/a1.jpg"
 
 ```
 
