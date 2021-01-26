@@ -4,9 +4,6 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import logging, urllib.request, base64
 from urllib.parse import urlparse, parse_qsl
 
-# HTTPGetMaxSize 最大处理的文件长度
-_httpGetmaxSize = 2 * 1024 * 1024
-
 
 class S(BaseHTTPRequestHandler):
     def _set_response(self):

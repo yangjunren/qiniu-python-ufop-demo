@@ -27,15 +27,6 @@ curl -X POST "http://127.0.0.1:9100/handler?cmd=doraufoptest&url=http://qb8z8byy
 
 来自 http://qb8z8byyd.bkt.clouddn.com/4/a.jpg 的网页内容会被打印
 
-### 测试处理资源通过请求body来指定：
-运行命令
-
-```
-curl -d "{\"data\":\"this should be printed\"}" "http://127.0.0.1:9200/handler?cmd=doraufoptest"
-```
-
-{"data":"this should be printed"}将会被打印
-
 ### 健康检查
 运行命令
 
