@@ -31,7 +31,7 @@ class S(BaseHTTPRequestHandler):
         ret = urlparse(self.path)
         if ret.path == "/handler":
             ret_query = dict(parse_qsl(ret.query))
-            if ret_query['cmd'] == "yjr_ufoptest" and ret_query['url'] != "":
+            if ret_query['cmd'] == "yjr-ufoptest" and ret_query['url'] != "":
                 try:
                     url = ret_query["url"]
                     f = urllib.request.urlopen(url)
