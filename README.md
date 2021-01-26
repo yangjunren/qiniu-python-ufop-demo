@@ -4,7 +4,7 @@
 进入该目录，然后运行以下命令，获得名为 ufopdemo:v1 的 docker 镜像
 
 ```
-docker build -t "yjr_ufoptest:v1" .
+docker build -t "yjr-ufoptest:v1" .
 ```
 
 # 验证镜像功能
